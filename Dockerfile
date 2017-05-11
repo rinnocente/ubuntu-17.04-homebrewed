@@ -1,6 +1,8 @@
-
+#
+# ubuntu 17.04 dressed up for scientific computing
+#
 FROM ubuntu:17.04
-
+#
 RUN apt update; apt -yq upgrade; \
 	apt install -yq vim \
 		git \
@@ -33,9 +35,11 @@ RUN apt update; apt -yq upgrade; \
                 python3-numpy \
                 python3-scipy \
                 zlib1g zlib1g-dev \
-	&& apt autoremove   \
+		--no-install-recommends \
+	&& apt autoremove   -y \
+	&& rm -rf /var/apt/lists/* \
 	&& ssh-keygen -A
-
+#
 CMD /bin/bash
 
 
