@@ -36,4 +36,6 @@ RUN apt update; apt -yq upgrade; \
 	&& apt autoremove   \
 	&& ssh-keygen -A
 
+CMD /bin/bash
+
 
