@@ -32,6 +32,7 @@ RUN apt update; apt -yq upgrade; \
  		libopenmpi-dev  \
                 libgfortran-6-dev  \
                 gfortran-6  \
+		python \
                 python3-numpy \
                 python3-scipy \
                 zlib1g zlib1g-dev \
