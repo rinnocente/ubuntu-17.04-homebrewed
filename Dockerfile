@@ -26,6 +26,7 @@ RUN apt update; apt -yq upgrade; \
  		libblacs-mpi-dev  \
 		libmatheval1 \
 		libmatheval-dev \
+		libxext-dev \
  		net-tools  \
  		make  \
  		autoconf  \
